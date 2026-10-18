@@ -1,0 +1,62 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    text-shadow: 1px 1px 2px gray;
+    margin: 0;
+}
+
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 15px;
+    
+    background-color: #F8D800;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#convert {
+  background-color: #007bff; 
+  color: #ffffff;           
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  width:35%;
+  
+  border: none;              
+  padding: 10px 20px;        
+  border-radius: 4px;        
+  cursor: pointer;           
+}
+
+#amount, 
+#initial-currency, 
+#converted-currency {
+  border-color: black;
+  border-radius: 6px;
+  border: 1.5px solid #110101;
+  padding: 8px 12px;
+  background-color: #ffffff;
+}
+
+
+#amount {
+  width: 70%;
+  box-sizing: border-box;
+}
+
+
+#temporary {
+    display: block;
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#error {
+    display: none;
+    color: red;
+    text-align: center;
+}

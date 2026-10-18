@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styleCurrencyConverter.css">
+    <script src="scriptCurrencyConverter.js" defer></script>
+</head>
+
+<body>
+
+   
+   <div class="converter" >
+       <h1>Currency Converter</h1>
+
+      
+          <label for="amount">Enter amount</label>
+          <input type="text" id="amount" placeholder="100" required>
+      
+       
+       <div id="currency">
+
+            <select id="initial-currency">
+               <option value="USD">USD-United States Dollar</option>
+               <option value="INR">INR-Indian Rupee</option>
+            </select>
+        
+             <span>TO</span>
+
+            <select id="converted-currency">
+               <option value="INR">INR-Indian Rupee</option>
+               <option value="USD">USD-United States Dollar</option>
+            </select>
+
+       </div>
+
+      <button type="submit" id="convert">Convert</button>
+
+      <b id="temporary"></b>
+      <p id="error">An error occurred, please try again later</p>
+       
+
+
+    </div>
+    
+
+</body>
+</html>
+
