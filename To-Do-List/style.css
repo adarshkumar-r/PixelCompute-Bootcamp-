@@ -1,0 +1,190 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+    padding: 30px;
+    margin: 0;
+}
+
+.page-header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.page-header h1 {
+    background: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+#search-input {
+    width: 35%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.task-form {
+    background-color: white;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+.task-form input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input,
+button {
+    padding: 8px;
+    margin: 4px;
+}
+
+input {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+#add-task:hover {
+    background-color: #388e3c;
+}
+
+h2 {
+    color: #3f51b5;
+}
+
+h3 {
+    color: inherit;
+}
+
+
+.edit-button {
+    background-color: #ffca28;
+    color: #333;
+}
+
+.edit-button:hover {
+    background-color: #fbc02d;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+#due-tasks span,
+#upcoming-tasks span {
+    color: #000;
+}
+
+#due-tasks > div,
+#upcoming-tasks > div {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.task-time-display {
+    display: block;
+    font-weight: bold;
+}
+
+#due-tasks > div > div,
+#upcoming-tasks > div > div {
+    margin-left: auto;
+}
+
+#due-tasks h3,
+#upcoming-tasks h3 {
+    background-color: #e8f5e9;
+    color: inherit;
+    padding: 8px;
+}
+
+.empty-state {
+    background-color: #fffecb;
+    color: #795548;
+    border: 1px solid #ffcc80;
+    padding: 10px;
+}
+
+
+.error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    padding: 25px 20px 20px;
+    background-color: white;
+    color: #333;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    z-index: 1001;
+}
+
+.error-message[hidden] {
+    display: none;
+}
+
+#error-message span {
+    display: block;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+#error-message #close-error {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    padding: 0 4px;
+    background: transparent;
+    color: #999;
+    font-size: 22px;
+}
+
+#error-message #ok-error {
+    display: block;
+    margin: 0 auto;
+    padding: 7px 18px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+}
+
+#error-message #ok-error:hover {
+    background-color: #388e3c;
+}

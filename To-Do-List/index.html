@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header class="page-header">
+        <h1>To-Do List</h1>
+        <input  type="text"  id="search-input"  placeholder="Search tasks...">
+    </header>
+
+    
+  <div id="error-message" class="error-message"  hidden>
+    <span>Please fill in all fields.</span>
+    <button type="button" id="close-error">x</button>
+    <button type="button" id="ok-error">OK</button>
+  </div>
+
+
+    <form id="task-form" class="task-form">
+       <input type="text"  id="task-input"  placeholder="Add your task here">
+       <input type="date" id="task-date">
+       <input type="time" id="task-time">
+       <button type="submit" id="add-task">Add Task</button>
+    </form>
+    
+
+    <h2>Due Tasks</h2>
+    <div id="due-tasks"></div>
+
+    <div id="upcoming-section">
+        <h2>Upcoming Tasks</h2>
+        <div id="upcoming-tasks"></div>
+    </div>
+
+    
+
+
+
+</body>
+</html>
